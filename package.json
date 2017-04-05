@@ -1,0 +1,19 @@
+{
+  "name": "markdown-docs-api",
+  "version": "0.0.0",
+  "license": "MIT",
+  "readme": "README.md",
+  "keywords": [
+    "donode",
+    "node.js"
+  ],
+  "scripts": {
+    "start": "node app.js",
+    "app:dev": "NODE_ENV=development node app.js",
+    "app:prod": "NODE_ENV=production node app.js"
+  },
+  "dependencies": {
+    "donode": "1.0.0-beta.4"
+  },
+  "devDependencies": {}
+}
