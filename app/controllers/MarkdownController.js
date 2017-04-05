@@ -9,8 +9,26 @@ class MarkdownController extends Controller {
 
   get(request, response) {
     return response.send([
-      { title: 'Introduction', content: '# Introduction \n\nHello world' },
-      { title: 'Setup', content: '# Introduction \n\nHello world' }
+      {
+        title: 'Prologue',
+        content: '# Introduction \n\nHello world',
+        submenu: [
+          { title: 'Release Notes', content: '' },
+          { title: 'Upgrade Guide', content: '' },
+          { title: 'Contribution Guide', content: '' },
+          { title: 'API Documentation', content: '' },
+        ]
+      },
+      {
+        title: 'Getting Started',
+        content: '# Introduction \n\nHello world',
+        submenu: [
+          { title: 'Installation', content: '' },
+          { title: 'Configuration', content: '' },
+          { title: 'Directory Structure', content: '' },
+          { title: 'Request Lifecycle', content: '' },
+        ]
+      },
     ]);
   }
 
