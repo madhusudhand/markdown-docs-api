@@ -1,30 +1,27 @@
 module.exports = {
   projects: [
-    { id: 1, name: 'Demo App' },
-    { id: 2, name: 'Markdown Docs' }
+    { id: 1, name: 'Demo-App' },
+    { id: 2, name: 'ES6' }
   ],
 
   projectData: [
     {
       projectId: 1,
       markdown: [{
-        title: 'Prologue',
-        content: '# Introduction \n\nHello world',
+        title: 'Node.js',
+        content: "# Welcome to Node Js tutorial.\n\nThe goal of this documentation is to comprehensively explain the Node.js API, both from a reference as well as a conceptual point of view. \nEach section describes a built-in module or high-level concept.Where appropriate, property types, method arguments, and the arguments provided to event handlers are detailed in a list underneath the topic heading.\nEvery .html document has a corresponding .json document presenting the same information in a structured manner. \n\n\nThis feature is experimental, and added for the benefit of IDEs and other utilities that wish to do programmatic things with the documentation.",
         submenu: [
-          { title: 'Release Notes', content: '' },
-          { title: 'Upgrade Guide', content: '' },
-          { title: 'Contribution Guide', content: '' },
-          { title: 'API Documentation', content: '' },
+          { title: 'Release Notes', content: "# Release details\n\nTo make the changelog easier to both use and manage, it has been split into multiple files organized according to significant major and minor Node.js release lines.\nRelease streams marked with LTS are currently covered by the Node.js Long Term Support plan.\nRelease versions displayed in bold text represent the most recent actively supported release\n\n### CHANGELOG:\n\n* [Node.js v7](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V7.md)\n* [Node.js v6](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V6.md)\n* [Node.js v5](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V5.md)\n* [Node.js v4](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V4.md)\n* [Node.js v0.12](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V012.md)\n* [Node.js v0.10](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V010.md)\n* [io.js](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_IOJS.md) and [Archive](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_ARCHIVE.md)" },
+          { title: 'Upgrade Guide', content: "# Wanna upgrade your node version? Here you go!\n\n### *To upgrade to latest node, type these commands in your terminal.* \n\n\n \n\n> sudo npm cache clean -f.\n\n> sudo npm install -g n.\n\n> sudo n stable.\n\n\nThe n package represents a Node helper, and running the last command upgrades node to the latest stable version.  Instead of using \"stable\", you could specify a desired version" },
+          { title: 'Contribution Guide', content: "# Contributing\nThank you for your interest in contributing to Node.js, there are multiple ways and places you can contribute and we're here to help facilitate that.\n\n# Reporting an Issue\nWe appreciate your interest in contributing to nodeJS.If you have found what you believe to be an issue with Node.js please do not hesitate to file an issue on the GitHub project. When filing your issue please make sure you can express the issue with a reproducible test case, and that test case should not include any external dependencies. That is to say, the test case can be executed without anything more than Node.js itself.\n\nWhen reporting an issue we also need as much information about your environment that you can include. We never know what information will be pertinent when trying narrow down the issue. Please include at least the following information:\n\n* Version of Node\n* Platform you're running on (macOS, SunOS, Linux, Windows)\n* Architecture you're running on (32bit or 64bit and x86 or ARM)\n\nThe Node.js project is currently managed across a number of separate GitHub repositories, each with their own separate issues database. If possible, please direct any issues you are reporting to the appropriate repository but don't worry if things happen to get put in the wrong place, the community of contributors will be more than happy to help get you pointed in the right direction.\n\n1. To report issues specific to Node.js, please use [nodejs/node](https://github.com/nodejs/node)\n2. To report issues specific to [this](https://nodejs.org/en/get-involved/contribute/) website, please use [nodejs/nodejs.org](https://github.com/nodejs/nodejs.org/issues)" },
+          { title: 'API Documentation', content: "# API Reference Documentation\nThe [API reference documentation](https://nodejs.org/api/) provides detailed information about a function or object in Node.js. This documentation indicates what arguments a method accepts, the return value of that method, and what errors may be related to that method. It also indicates which methods are available for different versions of Node.js.\n\nThis documentation describes the built-in modules provided by Node.js. It does not document modules provided by the community.\n\n> Looking for API docs of previous releases?\n> * [Node.js 5.x](https://nodejs.org/docs/latest-v5.x/api/)\n> * [Node.js 4.x](https://nodejs.org/docs/latest-v4.x/api/)\n> * [all  versions](https://nodejs.org/docs/)" },
         ]
       },
       {
-        title: 'Getting Started',
-        content: '# Introduction \n\nHello world',
+        title: 'md2mu',
+        content: "# Hello World!\n\n ### md2mu - what's that?\n\n Well! It's our current App - Markdown2Markup. Basically the markdown is getting converted to markup.Okay! what does your app offer?\n we'll illustrate it in detail.\n\n ## Features:\n \n 1. You can create directory structure of your project, edit it's contents and save simultaneously.\n 2. We've an inbuilt editor where you can enter the details and see that in preview (just beside) as beautiful HTML markup.\n 3. Once that's done, we provide you with the preview of the App.\n 4. Project management - you can save multiple projects and we'll give you an option to select between those saved projects.\n \n ## Upcoming features:\n 1. You can download your project offline.\n 2. User management - user can login and have account\n ",
         submenu: [
-          { title: 'Installation', content: '' },
-          { title: 'Configuration', content: '' },
-          { title: 'Directory Structure', content: '' },
-          { title: 'Request Lifecycle', content: '' },
+          { title: 'Installation', content:"# Installation\n\n```\nnpm install\n\nnpm start\n```" }
         ]
       }]
     },
@@ -32,10 +29,10 @@ module.exports = {
     {
       projectId: 2,
       markdown: [{
-        title: 'Introduction',
-        content: '# Introduction \n\nHello world',
+        title: 'Introduction to ES6',
+        content: "# EcmaScript - ES6 Rocks!\n\nECMAScript (ES) is a scripting language specification standardized by ECMAScript International. It is used by applications to enable client-side scripting. Languages like JavaScript, Jscript and ActionScript are governed by this specification. \n\nThis tutorial introduces you to ES6 implementation in JavaScript.\n\n# JavaScript\n\nJavaScript was developed by Brendan Eich, a developer at Netscape Communications Corporation, in 1995.JavaScript started life with the name Mocha, and was briefly named LiveScript before being officially renamed to JavaScript. It is a scripting language that is executed by the browser, i.e. on the client’s end. It is used in conjunction with HTML to develop responsive webpages.\n\nECMA Script6’s implementation discussed here covers the following new features −\n\n- Support for constants\n- Block Scope\n- Arrow Functions\n- Extended Parameter Handling\n- Template Literals\n- Extended Literals\n- Enhanced Object Properties\n- De-structuring Assignment\n- Modules\n- Classes\n- Iterators\n- Generators\n- Collections\n- New built in methods for various classes\n- Promises\n\n",
         submenu: [
-          { title: 'Release Notes', content: '' },
+          { title: 'Syntax', content: "# Syntax\nIt defines the set of rules for writing programs. Every language specification defines its own syntax.\n\nA JavaScript program can be composed of −\n\n* Variables− Represents a named memory block that can store values for the program.\n* Literals− Represents constant/fixed values.\n* Operators− Symbols that define how the operands will be processed.\n* KeyWords− Words that have a special meaning in the context of a language.\n\nThe following table lists some keywords in JavaScript. Some commonly used keywords are listed in the following table.\n| void       | super          | instanceof  |\n| ------------- |:-------------:| -----:|\n|break     | case | var|\n| module     | finally      |   while |\n| null | static      |   number |\n| type | for      |   if|\n\n1. Modules − Represents code blocks that can be reused across different programs/scripts.\n2. Comments − Used to improve code readability. These are ignored by the JavaScript engine.\n3. Identifiers − These are the names given to elements in a program like variables, functions, etc. The rules for identifiers are −\n * Identifiers can include both, characters and digits. However, the identifier cannot begin with a digit.\n * Identifiers cannot include special symbols except for underscore (_) or a dollar sign ($).\n * cannot be keywords. They must be unique.\n * They are case sensitive. Identifiers cannot contain spaces.\n" },
         ]
       }]
     },
